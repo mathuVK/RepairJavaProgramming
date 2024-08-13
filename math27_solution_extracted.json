@@ -1,0 +1,9 @@
+{
+  "Math-27": {
+    "The buggy code is incorrectly calculating the percentage value by multiplying the fraction by 100, resulting in overflow issues for large numerator values.": [
+      "Modify the percentage calculation in the buggy function\nUpdate the percentage calculation in the percentageValue() function to directly calculate the percentage value as (numerator / denominator) * 100. This will prevent overflow issues when dealing with large numerator values.",
+      "Use BigDecimal for precise calculations\nInstead of using double for percentage calculations, switch to using BigDecimal to perform precise calculations. This will help avoid rounding errors and overflow issues that can occur with double data type.",
+      "Handle overflow cases\nCheck for overflow conditions before performing the percentage calculation. If the result of the multiplication exceeds the maximum value that can be stored in a double, handle the overflow gracefully by returning a special value or throwing an exception."
+    ]
+  }
+}

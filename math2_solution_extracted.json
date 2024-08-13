@@ -1,0 +1,10 @@
+{
+  "Math-2": {
+    "The error message shows that the sample value is negative, which is not expected as per the test conditions set in the for loop.": [
+      "Update the sample value check in the for loop\nChange the condition in the for loop to check if sample is less than or equal to n instead of just equal to n. This will ensure that the sample value is within the expected range.\n\n```java\nfor (int i = 0; i < 100; i++) {\n    final int sample = dist.sample();\n    Assert.assertTrue(\"sample=\" + sample, 0 <= sample);\n    Assert.assertTrue(\"sample=\" + sample, sample <= n);\n}\n```",
+      "Modify the calculation in the getNumericalMean method\nUpdate the calculation in the getNumericalMean method to handle cases where the Population Size is 0. Add a check to return 0 if the Population Size is 0 to avoid division by zero.\n\n```java\npublic double getNumericalMean() {\n    int populationSize = getPopulationSize();\n    if(populationSize == 0){\n        return 0.0;\n    }\n    return (double) (getSampleSize() * getNumberOfSuccesses()) / (double) populationSize;\n}\n```",
+      "Update the sample value check in the for loop\nChange the condition in the for loop to check if sample is less than or equal to n instead of just equal to n. This will ensure that the sample value is within the expected range.\n\n```java\nfor (int i = 0; i < 100; i++) {\n    final int sample = dist.sample();\n    Assert.assertTrue(\"sample=\" + sample, 0 <= sample);\n    Assert.assertTrue(\"sample=\" + sample, sample <= n);\n}\n```",
+      "Modify the calculation in the getNumericalMean method\nUpdate the calculation in the getNumericalMean method to handle cases where the Population Size is 0. Add a check to return 0 if the Population Size is 0 to avoid division by zero.\n\n```java\npublic double getNumericalMean() {\n    int populationSize = getPopulationSize();\n    if(populationSize == 0){\n        return 0.0;\n    }\n    return (double) (getSampleSize() * getNumberOfSuccesses()) / (double) populationSize;\n}\n```"
+    ]
+  }
+}
