@@ -1,4 +1,4 @@
-# Automated Program Repair with GPT-3.5 Turbo and Magicoder
+# Automated Java Program Repair with GPT-3.5 Turbo and Magicoder
 
 This project is designed to automatically repair incorrect code solutions using two AI models: GPT-3.5 Turbo and Magicoder. The project was developed as part of a programming repair assignment, focusing on providing accurate and efficient bug fixes and suggestions.
 
